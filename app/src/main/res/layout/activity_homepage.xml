@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_transparent" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logo"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+
+            android:text="Call Details"/>
+
+        <Button
+            android:id="@+id/sms"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/call"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="18dp"
+
+            android:text="Sms Details"/>
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sms"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="18dp"
+
+            android:text="Location"/>
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/location"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="18dp"
+            android:text="Logout"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

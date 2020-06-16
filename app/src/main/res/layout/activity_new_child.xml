@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewChild">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:paddingBottom="50dp">
+
+
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Child's details:"
+            android:textColor="#0059b3"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:hint="Name"
+            android:textColor="#0059b3"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cname"
+            android:hint="Age."
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#0059b3"
+            android:textColorHint="@color/colorPrimary"
+            android:maxLines="1"
+            />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#0059b3" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#0059b3" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/u_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:hint="Enter Phone no."
+            android:inputType="text"
+            android:maxLength="15"
+            android:textColor="#0059b3"
+            android:textColorHint="@color/colorPrimary"
+            android:maxLines="1"
+            />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/u_name"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:textColor="#0059b3"
+            android:textColorHint="@color/colorPrimary"
+            />
+
+
+
+        <Button
+            android:id="@+id/c_add"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="10dp"
+            >
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
